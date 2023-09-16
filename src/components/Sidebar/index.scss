@@ -29,7 +29,6 @@
         a {
             font-size: 22px;
             color: #4d4d4e;
-            // display: block;
             margin: 10px;
             line-height: 51px;
             height: 51px;
@@ -54,6 +53,7 @@
                 letter-spacing: 2px;
                 bottom: 0;
                 opacity: 0;
+                margin-left: -25px;
                 transition: all 0.2 ease-out;
             }
     
