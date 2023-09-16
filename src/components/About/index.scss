@@ -1,62 +1,31 @@
 .about-page{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 
-    ul{
-        position: absolute;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        margin: 0;
-        background-color: rgba(255,255,240,0.5);
-        border: 1px solid ;
-        border-radius: 4px;
+    a{
+        
+        .linkedin-icon {
+            color: #0a66c2;
+            background-color: #ffffff;
+            margin: auto 8px;
+        }
+        .github-icon {
+            color: #f0f6fc;
+            background-color: #0d1117;
+            margin: auto 8px;
+        }
 
-        li{
-            a{
-                padding: 10px 0;
-                display: block;
-                font-size: 15px;
-                line-height: 16px;
-                text-decoration: none;
-                width: fit-content;
-
-                svg{
-                    width: 25px;
-                    height: auto;
+        svg{
+            width: 25px;
+            height: auto;
                 
-                    &:hover {
-                        color: #ffd700;
-                    }
-                }
-
-                &::before {
-                    font-family: 'san-serif';
-                    font-size: 20px;
-                    margin-right: 20px;
-                    color: #000000;
-                }
-            }
-            .linkedin-icon svg{
-                color: #0a66c2;
-                background-color: #ffffff;
-            }
-            .github-icon svg{
-                color: #f0f6fc;
-                background-color: #0d1117;
+            &:hover {
+                color: #ffd700;
             }
 
-        }
-        .linkedin-icon{
-            &::before{
-                content: 'Linkedin -->';
-            }
-        }
-        .github-icon{
-            &::before{
-                content: 'Gihub -->';
+            &::before {
+                font-family: 'san-serif';
+                font-size: 20px;
+                margin-right: 20px;
+                color: #000000;
             }
         }
     }
