@@ -2,7 +2,6 @@ import './index.scss'
 import {Link, NavLink} from 'react-router-dom'
 import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faHome,faUser,faEnvelope,} from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
@@ -21,18 +20,6 @@ const Sidebar = () => {
                 <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />
             </NavLink>
         </nav>
-        <ul>
-            <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kittikun-parinyaprasert-575533249/">
-                    <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel="noreferrer" href="https://github.com/KIITTIKUN">
-                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
-                </a>
-            </li>
-        </ul>
     </div>
 }
 

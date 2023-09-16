@@ -2,7 +2,7 @@ import AnimateLetters from '../AnimateLetters'
 import {useState,useEffect} from 'react'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -30,11 +30,18 @@ const About = () => {
             I'm quiet confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
             </p>
-            <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-            </p>
+            <ul>
+            <li>
+                <a className ='linkedin-icon' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kittikun-parinyaprasert-575533249/">
+                    <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a className='github-icon' target="_blank" rel="noreferrer" href="https://github.com/KIITTIKUN">
+                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
+                </a>
+            </li>
+        </ul>
         </div>
 
         <div className="stage-cube-cont">
