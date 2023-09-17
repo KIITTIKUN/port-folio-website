@@ -1,5 +1,5 @@
 .about-page{
-
+    height: 100%;
     a{
         
         .linkedin-icon {
@@ -16,6 +16,7 @@
         svg{
             width: 25px;
             height: auto;
+            border-radius: 25%;
                 
             &:hover {
                 color: #ffd700;
@@ -29,17 +30,12 @@
             }
         }
     }
-    
+
     .stage-cube-cont {
-        width: 50%;
-        height: 100%;
-        top: 0;
+        width: 100%;
+        height: auto;
         padding-top: 18%;
-        margin-left: 0;
-        position: absolute;
-        right: 0;
-        overflow: hidden;
-        
+        position: relative;
     }
     
     .cubespinner{
@@ -49,7 +45,7 @@
         animation-duration: 12s;
         transform-style: preserve-3d;
         transform-origin: 100px 100px 0;
-        margin-left: calc(50% - 100px);
+        margin-left: 60%;
         
         div{
             position: absolute;
@@ -104,5 +100,15 @@
     }
     83%{
         transform: rotateX(90deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .stage-cube-cont{
+        margin: auto;
+        
+        .cubespinner{
+            margin-left: calc(50% - 100px);
+        }
     }
 }
