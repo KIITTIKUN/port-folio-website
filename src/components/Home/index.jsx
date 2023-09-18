@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/k-alphbet.png'
 import {Link} from 'react-router-dom'
 import AnimateLetters from '../AnimateLetters'
-import Logo  from './Logo'
+import Profile  from './Profile'
 import Loader from 'react-loaders'
 import './index.scss'
 
@@ -32,10 +32,10 @@ const Home = () =>{
                  <br /> 
                  <AnimateLetters letterClass={letterClass} stringArray={jobArray} index={22}/>
                 </h1>
-                <h2>Front End Developer / JavaScript Junior / Youtuber</h2>
+                <h2>Mathematics bachelor's degree</h2>
                 <Link to='/contact' className="flat-button">CONTACT ME</Link>
             </div>
-                <Logo />
+            <Profile />
         </div>
         <Loader type="pacman" />
         </>
