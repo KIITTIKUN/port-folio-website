@@ -76,6 +76,12 @@
             }
         }
 
+        a.skill-link{
+            &:after{
+                content:'SKILL';
+            }
+        }
+
         a.active{
             svg{
                 color: #ffd700;

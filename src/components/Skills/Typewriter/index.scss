@@ -1,0 +1,41 @@
+.typewriter{ 
+    width: fit-content;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    h2 {
+    color: #ffd700;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid #fff; 
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 10s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
+  }
+}  
+  @keyframes typing {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    75%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff }
+  }
