@@ -82,6 +82,12 @@
             }
         }
 
+        a.Exp-link{
+            &:after{
+                content:'EXP';
+            }
+        }
+
         a.active{
             svg{
                 color: #ffd700;

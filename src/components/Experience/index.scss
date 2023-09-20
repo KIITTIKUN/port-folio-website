@@ -1,0 +1,45 @@
+.exp-page{
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    "a "
+    "b"
+    "b";
+  
+  .text-zone{
+    grid-area: a;
+    align-items: center;
+    justify-self: center;
+    // vertical-align: middle;
+    // display: table-cell;
+    // max-height: 90%;
+}
+
+h1{
+    width: fit-content;
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+
+    &::before{
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+
+    &::after{
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        opacity: 0.6;
+    }
+}
+  .timeline-zone{
+    grid-area: b;
+    justify-self: center;
+  }
+}
