@@ -95,3 +95,16 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .nav-bar{
+        .logo,
+        a.home-link,
+        a.about-link,
+        a.skill-link,
+        a.Exp-link,
+        a.contact-link{
+            visibility: hidden;
+        }
+    }
+}
