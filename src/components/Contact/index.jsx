@@ -39,7 +39,7 @@ const Contact = () => {
                     <AnimateLetters stringArray={headerArray} index={15} letterClass={letterClass}/>
                 </h1>
                 <p>
-            I am interested in freelance opportunities - especially on ambitious
+            I am interested in job opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
           </p>
@@ -81,7 +81,7 @@ const Contact = () => {
         </div>
             <div className="info-map">
                 <center>&lt;Address.&gt;</center>
-                38 M.11. 
+                138 M.11. 
                 <br />
                 Pikulook.
                 <br />
@@ -96,7 +96,7 @@ const Contact = () => {
                 <MapContainer center={[14.233021282733084, 101.00428455209402]} zoom={13}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[14.233021282733084, 101.00428455209402]}>
-                        <Popup>sloba lives here, come over</Popup>
+                        <Popup>my home lives here, come over</Popup>
                     </Marker>
                 </MapContainer>
             </div>
