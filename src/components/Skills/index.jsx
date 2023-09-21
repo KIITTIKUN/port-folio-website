@@ -2,8 +2,6 @@ import AnimateLetters from '../AnimateLetters'
 import {useState,useEffect} from 'react'
 import './index.scss'
 import Typewriter from './Typewriter'
-// import Timeline from './Timeline'
-// import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const Skills = () => {
@@ -44,14 +42,13 @@ const Skills = () => {
                 <li>Web frameworks and technologies</li>
                     <ul>
                         <li>Node.js</li>
-                        <li>React.js</li>
-                        <li>Express.js</li>
+                        <li>React</li>
+                        <li>Express</li>
                     </ul>
             </ul>
         </div>
         <div className='skill-zone'>
             <Typewriter />
-            {/* <Timeline /> */}
         </div>
     </div>
     <Loader type="pacman" />
