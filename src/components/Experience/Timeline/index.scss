@@ -138,3 +138,15 @@ ul{
     font-weight: 300;
   }
 }
+
+@media screen and (max-width: 1075px) {
+  .timeline{
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .timeline{
+    left: 0;
+  }
+}
