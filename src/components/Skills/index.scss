@@ -26,12 +26,12 @@
         .text-zone{
             width: 100%;
             height: auto;
-            top: 100px;
+            top: 200px;
         }
 
         .skill-zone{
             display: relative;
-            bottom: -500px;
+            bottom: -400px;
         }
     }
 
@@ -40,12 +40,23 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    .skill-page{
+        .skill-zone{
+            bottom: -600px;
+        }
+    }
+}
 @media screen and (max-width:300px) {
     .skill-page{
         
         .skill-zone{
-            bottom: -550px;
+            bottom: -700px;
 
         }
+    }
+
+    .bottom-tags{
+        bottom: -400px;
     }
 }
