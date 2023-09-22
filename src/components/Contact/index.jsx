@@ -21,10 +21,6 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault()
     
-        emailjs
-          .sendForm('service_iagd9im', 'template_4libe3z', form.current, '2ykGMFdtNHjyl2x6a')
-          .then(
-            () => {
               Swal.fire({
                 title: 'Send Email',
                 text: "Are you confirm?",
@@ -39,12 +35,12 @@ const Contact = () => {
                     'Thank you',
                     'Your operation was successful.',
                     'success',
-                  ).then(()=>{
-                    window.location.reload(false)
+                  ).then(()=>{emailjs
+                    .sendForm('service_iagd9im', 'template_4libe3z', form.current, '2ykGMFdtNHjyl2x6a').then(()=>{
+                    window.location.reload(false)})
                   })
                 }
-              })
-            }).catch((error)=>{
+              }).catch((error)=>{
                 console.error('Email could not be sent:', error)
             })
       }
