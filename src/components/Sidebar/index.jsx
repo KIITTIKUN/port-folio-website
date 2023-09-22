@@ -1,15 +1,11 @@
 import './index.scss'
-import {Link, NavLink} from 'react-router-dom'
-import LogoK from '../../assets/images/k-alphbet.png'
+import { NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome,faUser,faEnvelope,faCode,faStarAndCrescent} from '@fortawesome/free-solid-svg-icons'
 import Hamburger from './Hamburger'
 
 const Sidebar = () => {
     return <div className='nav-bar'>
-        <Link className='logo' to='/'>
-            <img src={LogoK} alt="logo" />
-        </Link>
         <nav>
             <NavLink exact="true" activeclassname="active" className="home-link" to="/">
                 <FontAwesomeIcon icon={faHome} color="4d4d4e" />
