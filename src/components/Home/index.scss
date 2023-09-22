@@ -10,9 +10,9 @@
     .text-zone {
         position: relative;
         left: 100px;
-        // transform: translateY(50%);
         width: fit-content;
         max-height: 50%;
+        min-width: 339px;
     }
 
     h1{
@@ -86,49 +86,18 @@
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
     .home-page{
-        background-image: url(../../assets/images/my-profile.jpeg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        max-width: 600px;
+        top: 100px;
 
         h2{
             margin-top: 60px;
             background: #fff;
             font-size: 13px;
         }
-
-        .flat-button{
-            color: #022c43;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            font-family: sans-serif;
-            text-decoration: none;
-            padding: 10px 18px;
-            border: 1px solid #022c43;
-            margin-top: 25px;
-            float: left;
-            animation: fadeIn 1s 1.8s backwards;
-            white-space: nowrap;
-            background-color: #ffd700;
-    
-            &:hover {
-                background: #ffd700;
-                color: #333;
-            }
-        }
     }
-}
-
-@media screen and (max-width: 330px){
-    .home-page{
-        background-image: url(../../assets/images/my-profile.jpeg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-
-        h1{
-            margin-top: 150%;
-        }
+    .page{
+        min-height: 900px;
     }
 }
