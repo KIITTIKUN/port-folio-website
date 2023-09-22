@@ -22,7 +22,7 @@ function Timeline() {
         <div className="content">
           <h2>Since 2021</h2>
           <p>
-          I'm learning web development basics (HTML, CSS, JS, SQL) with FreeCodeCamp, focusing on responsive web design and algorithmic structures.
+          I'm learning web development basics (HTML, CSS, JS, SQL) with FreeCodeCamp, focusing on responsive web design and algorithm structures.
           </p>
           <ul>
                     <li>HTML</li>
@@ -45,7 +45,7 @@ function Timeline() {
                     <li>React</li>
                     <li>Express</li>
                     <li>Mongo DB</li>
-                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
                     <li>Node.js</li>
                     <li>Github</li>
                     <li>FPDF</li>
@@ -58,7 +58,7 @@ function Timeline() {
           <p>
           For my RMUTT mathematics bachelor's degree project, I'm developing a web application 
           called 'Better AQI Estimator.' It uses Bilinear Interpolation method to display missing AQI 
-          data on a map using AQIcn.org APIs, helping users understand air quality at specific locations.
+          data on a map using AQIcn APIs, helping users understand air quality at specific locations.
           </p>
           <ul>
             <li>Latex</li>
