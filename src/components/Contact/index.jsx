@@ -6,6 +6,7 @@ import './index.scss'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
     const form = useRef()
@@ -24,8 +25,25 @@ const Contact = () => {
           .sendForm('service_iagd9im', 'template_4libe3z', form.current, '2ykGMFdtNHjyl2x6a')
           .then(
             () => {
-                alert('Message successfully sent!')
-              window.location.reload(false)
+              Swal.fire({
+                title: 'Send Email',
+                text: "Are you confirm?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm',
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  Swal.fire(
+                    'Thank you',
+                    'Your operation was successful.',
+                    'success',
+                  ).then(()=>{
+                    window.location.reload(false)
+                  })
+                }
+              })
             }).catch((error)=>{
                 console.error('Email could not be sent:', error)
             })

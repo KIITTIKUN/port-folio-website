@@ -70,6 +70,12 @@
       float: right;
       text-align: center;
       margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffd700;
+        color: #000; 
+      }
     }
   }
   
@@ -114,7 +120,7 @@
       }
     }
   }
-  
+
   @media screen and (max-width: 1200px) {
     .map-wrap {
         float: none;
@@ -129,3 +135,9 @@
     }
 
   }
+
+  @media (min-width: 780px) {
+    .swal2-modal {
+        min-width: 50vh;
+    }
+}
