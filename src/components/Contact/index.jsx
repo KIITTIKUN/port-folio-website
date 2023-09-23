@@ -52,11 +52,15 @@ const Contact = () => {
                 <h1>
                     <AnimateLetters stringArray={headerArray} index={15} letterClass={letterClass}/>
                 </h1>
-                <p>
-            I am interested in job opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+              <p>
+            I'm interested in job opportunities. If you have any other requests or
+            questions, don't hesitate to contact me by 
           </p>
+            <div className='contact-box'>
+            <FontAwesomeIcon icon={faPhone} color="4d4d4e" />: 098-4528975<br /> 
+            <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />: <span>kittikun.real@gmail.com</span><br />
+            </div>
+              <p>or using below form either.</p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -93,26 +97,16 @@ const Contact = () => {
             </form>
           </div>
         </div>
-            <div className="info-map">
-                <center>&lt;Address.&gt;</center>
-                138 M.11. 
-                <br />
-                Pikulook.
-                <br />
-                Banna.
-                <br />
-                Nakornnayok, 26110. <br />
-                <br />
-                <FontAwesomeIcon icon={faPhone} color="4d4d4e" /> : 098-4528975<br />
-                <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />: <span>kittikun.real@gmail.com</span><br />
-            </div>
             <div className='map-wrap'>
-                <MapContainer center={[14.233021282733084, 101.00428455209402]} zoom={13}>
+                <MapContainer center={[14.233021282733084, 101.00428455209402]} zoom={12}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[14.233021282733084, 101.00428455209402]}>
                         <Popup>my home lives here, come over</Popup>
                     </Marker>
                 </MapContainer>
+              <div className="info-map">
+                <p>Mr. Kittikun Parinyaprasert.<br/> 138 M.11, Suwannasorn Road., T. Pikulook. A. Banna. 26110 Nakornnayok, Thailand </p>
+              </div>
             </div>
         </div>
         <Loader type="pacman" />

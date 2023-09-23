@@ -1,7 +1,8 @@
 .contact-form {
     width: 100%;
     margin-top: 20px;
-  
+    min-width: 500px;
+
     ul {
       padding: 0;
       margin: 0;
@@ -80,29 +81,33 @@
   }
   
   .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 115%;
-    margin-top: -3%;
+    // background: rgba(8, 253, 216, 0.1);
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    margin-left: 55%;
+    margin-top: 10%;
+    min-width: 500px;
+    width: fit-content;
   }
   
   .leaflet-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 50%;
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+    margin: auto;
+    min-height: 300px;
+    min-width: 500px;
   }
   
   .info-map {
-    position: absolute;
-    background: #000;
-    top: 50px;
-    right: 30%;
+    position: relative;
+    // background: rgba(8, 253, 216, 0.1);
     z-index: 999999;
-    width: 267px;
+    width: fit-content;
     padding: 20px;
     color: #fff;
     font-family: 'Helvetica';
@@ -111,6 +116,7 @@
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
+    max-width: 500px;
   
     span {
       font-size: 16px;
@@ -121,9 +127,29 @@
     }
   }
 
+.text-zone{
+  h1{
+    min-width: 280px;
+  }
+.contact-box{
+  color: #000;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+  width: fit-content;
+  padding: 5px;
+  svg{
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+}
+
   @media screen and (max-width: 1200px) {
     .map-wrap {
-        float: none;
+        // float: none;
         margin: 0;
         width: 100%;
         height: 400px;
@@ -131,7 +157,7 @@
       }
     
     .info-map {
-      display: none;
+      // display: none;
     }
 
   }
