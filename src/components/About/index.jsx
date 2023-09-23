@@ -2,7 +2,7 @@ import AnimateLetters from '../AnimateLetters'
 import {useState,useEffect} from 'react'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3, faGit, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
@@ -23,22 +23,11 @@ const About = () => {
             <h1>
                 <AnimateLetters stringArray={headerArray} index={15} letterClass={letterClass}/>
             </h1>
-            <p>  I'm a very ambitious web developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.</p>
-            <p>
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-            </p>
-            <p>If you want to see more. This is my profile in LinkedIn:
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kittikun-parinyaprasert-575533249/">
-                    <FontAwesomeIcon className ='linkedin-icon' icon={faLinkedin} color="4d4d4e" />
-                </a>
-                and, my projects on Github:
-                <a target="_blank" rel="noreferrer" href="https://github.com/KIITTIKUN">
-                    <FontAwesomeIcon className='github-icon'icon={faGithub} color="4d4d4e" />
-                </a>
-            </p>
+            <div class='information'>
+
+            </div>
+            <p>I am Kittikun Parinyaprasert, a mathematics graduate in 2022 with the dream of becoming a web developer. I consistently strive to enhance my coding skills.</p>
+            <p>I am seeking opportunities in the IT industry to leverage my skills and expertise on a variety of challenging projects.</p>
         </div>
         <div className="stage-cube-cont">
             <div className='cubespinner'>
