@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom'
 import AnimateLetters from '../AnimateLetters'
 import Profile  from './Profile'
 import Loader from 'react-loaders'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
 
 const Home = () =>{
@@ -32,7 +34,14 @@ const Home = () =>{
                  <br /> 
                  <AnimateLetters letterClass={letterClass} stringArray={jobArray} index={22}/>
                 </h1>
-                <h2>Mathematics bachelor's degree</h2>
+                <div className='button-link'>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kittikun-parinyaprasert-575533249/">
+                    <FontAwesomeIcon className ='linkedin-icon' icon={faLinkedin} color="4d4d4e" />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/KIITTIKUN">
+                    <FontAwesomeIcon className='github-icon'icon={faGithub} color="4d4d4e" />
+                </a>
+                </div>
                 <Link to='/contact' className="flat-button">CONTACT ME</Link>
             </div>
             <Profile />
