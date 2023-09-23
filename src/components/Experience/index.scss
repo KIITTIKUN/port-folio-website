@@ -41,5 +41,6 @@ h1{
   .timeline-zone{
     grid-area: b;
     justify-self: center;
+    animation: pulse 2s;
   }
 }

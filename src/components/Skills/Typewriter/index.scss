@@ -19,6 +19,9 @@
       blink-caret .5s step-end infinite;
     animation-iteration-count: infinite;
   }
+  .name{
+    color:chartreuse !important;
+  }
 }  
   @keyframes typing {
     0%{

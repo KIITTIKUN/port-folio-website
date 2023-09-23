@@ -23,27 +23,26 @@ const Skills = () => {
                 <AnimateLetters stringArray={skillArray} index={15} letterClass={letterClass}/>
             </h1>
             <ul>
-                <li>Programming, scripting, and markup languages</li>
+                <li className='topic-skill'>Programming, scripting, and markup languages</li>
                     <ul>
-                        <li>HTML/CSS</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>SQL</li>
-                        <li>Latex</li>
+                        <li className='skill'>HTML/CSS (fair)</li>
+                        <li className='skill'>Python (fair)</li>
+                        <li className='skill'>JavaScript (fair)</li>
+                        <li className='skill'>TypeScript (fair)</li>
+                        <li className='skill'>SQL (fair)</li>
+                        <li className='skill'>Latex (experience)</li>
                     </ul>
-                <li>Database</li>
+                <li className='topic-skill'>Database</li>
                     <ul>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>SQLite</li>
-                        <li>MongoDB</li>
+                        <li className='skill'>MySQL (fair)</li>
+                        <li className='skill'>SQLite (fair)</li>
+                        <li className='skill'>MongoDB (fair)</li>
                     </ul>
-                <li>Web frameworks and technologies</li>
+                <li className='topic-skill'>Web frameworks and technologies</li>
                     <ul>
-                        <li>Node.js</li>
-                        <li>React</li>
-                        <li>Express</li>
+                        <li className='skill'>Node.js (fair)</li>
+                        <li className='skill'>React (fair)</li>
+                        <li className='skill'>Express (fair)</li>
                     </ul>
             </ul>
         </div>

@@ -24,8 +24,8 @@ function Timeline() {
           I'm learning web development basics with FreeCodeCamp, focusing on responsive web design and algorithm structures, and gained Knowledge involved in the technologies below
           </p>
           <ul>
-              <li>HTML/CSS (experience)</li>
-              <li>JavaScript (experience)</li>
+              <li>HTML/CSS (fair)</li>
+              <li>JavaScript (fair)</li>
               <li>TypeScript (fair)</li>
               <li>JSON (experience)</li>
               <li>Restful APIs (fair)</li>
