@@ -23,9 +23,6 @@ const About = () => {
             <h1>
                 <AnimateLetters stringArray={headerArray} index={15} letterClass={letterClass}/>
             </h1>
-            <div class='information'>
-
-            </div>
             <p>I am Kittikun Parinyaprasert, a mathematics graduate in 2022 with the dream of becoming a web developer. I consistently strive to enhance my coding skills.</p>
             <p>I am seeking opportunities in the IT industry to leverage my skills and expertise on a variety of challenging projects.</p>
         </div>
