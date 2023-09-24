@@ -111,11 +111,39 @@
 }
 
 @media screen and (max-width: 768px){
-    .home-page{
-        max-width: 600px;
-        top: 100px;
-    }
     .page{
         min-height: 900px;
+    .home-page{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 100px;
+        .text-zone{
+            position: absolute;
+            left: 220px;
+            h1,
+            .button-link{
+                text-align: center;
+            }
+            .flat-button{
+                position: relative;
+                left: 80px;
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .page{
+        min-height: 800px;
+        .home-page{
+        left: -25px;
+        top: 50px;
+        .text-zone{
+            left: 50px;
+        }
+    }
     }
 }
