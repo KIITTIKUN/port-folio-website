@@ -3,25 +3,29 @@
     padding-top: 5em;
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: fit-content;
     align-items: center;
     flex-direction: column;
     margin: auto;
+    position: relative;
+    top:-180px;
     h2 {
-    color: #ffd700;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .15em solid #fff; 
-    white-space: nowrap; 
-    letter-spacing: .15em; 
-    animation: 
+      background: black;
+      border-radius: 2px;
+      color: #ffd700;
+      font-family: monospace;
+      overflow: hidden; 
+      border-right: .15em solid #fff; 
+      white-space: nowrap; 
+      letter-spacing: .15em; 
+      animation: 
       typing 10s steps(30, end),
       blink-caret .5s step-end infinite;
-    animation-iteration-count: infinite;
-  }
-  .name{
-    color:chartreuse !important;
-  }
+      animation-iteration-count: infinite;
+    }
+    .question{
+      color: #00FF7F;
+    }
 }  
   @keyframes typing {
     0%{

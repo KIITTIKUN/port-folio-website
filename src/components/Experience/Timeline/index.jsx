@@ -21,7 +21,7 @@ function Timeline() {
         <div className="content">
           <h2>2021</h2>
           <p>
-          I'm learning web development basics with FreeCodeCamp, focusing on responsive web design and algorithm structures, and gained Knowledge involved in the technologies below
+          I've learned web development basics with FreeCodeCamp, focused on responsive web design and algorithm structures, and gained Knowledge involved in the technologies below
           </p>
           <ul>
               <li>HTML/CSS</li>

@@ -105,7 +105,7 @@ const Contact = () => {
                     </Marker>
                 </MapContainer>
               <div className="info-map">
-                <p>Mr. Kittikun Parinyaprasert.<br/> 138 M.11, Suwannasorn Road., T. Pikulook. A. Banna. 26110 Nakornnayok, Thailand </p>
+                <p>Kittikun Parinyaprasert.<br/> 138 M.11, Suwannasorn Road., T. Pikulook. A. Banna. 26110 Nakornnayok, Thailand </p>
               </div>
             </div>
         </div>

@@ -1,13 +1,13 @@
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular,faHtml5,faCss3,faReact,faJsSquare,faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import { faGithub,faHtml5,faCss3,faReact,faJsSquare,faGitAlt} from '@fortawesome/free-brands-svg-icons'
 
 const Cubespinner = () => {
     return(
         <div className="stage-cube-cont">
             <div className='cubespinner'>
                 <div className="face1">
-                    <FontAwesomeIcon icon={faAngular} color='#DD0031'/>
+                    <FontAwesomeIcon icon={faGithub} color='#444444'/>
                 </div>
                 <div className="face2">
                     <FontAwesomeIcon icon={faHtml5} color='#F06529'/>
