@@ -1,5 +1,14 @@
 .skill-page{
-    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .text-zone{
+            width: 100%;
+            height: fit-content;
+            min-height: 450px;
+        }
         ul{
             .topic-skill{
                 color: #fff;
@@ -16,50 +25,55 @@
         }
         
         .skill-zone{
-            width: 50%;
-            height: 100%;
-            position: relative;
-            left: 45%; 
+            width: 100%;
+            height: 50%;
+            // position: relative;
+            // left: 45%; 
     }
 }
 
 @media screen and (max-width:1200px) {
     .skill-page{
-
+        min-height: 1000px;
         .text-zone{
+            position: absolute;
             width: 100%;
             height: auto;
-            top: 200px;
+            top: 300px;
         }
 
-        .skill-zone{
-            display: relative;
-            bottom: -400px;
-        }
-    }
+//         .skill-zone{
+//             display: relative;
+//             bottom: -400px;
+//         }
+//     }
 
-    .bottom-tags{
-        bottom: -200px;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .skill-page{
-        .skill-zone{
-            bottom: -600px;
-        }
+//     .bottom-tags{
+//         bottom: -200px;
     }
 }
-@media screen and (max-width:300px) {
+
+@media screen and (max-width:1050px) {
     .skill-page{
+        .text-zone{
+            left: calc(50% - 200px);
+        }
+        .skill-zone{
+            position: absolute;
+            top: calc(5% + 500px);
+        }
+    }
+}
+// @media screen and (max-width:300px) {
+//     .skill-page{
         
-        .skill-zone{
-            bottom: -700px;
+//         .skill-zone{
+//             bottom: -700px;
 
-        }
-    }
+//         }
+//     }
 
-    .bottom-tags{
-        bottom: -400px;
-    }
-}
+//     .bottom-tags{
+//         bottom: -400px;
+//     }
+// }

@@ -1,7 +1,8 @@
 import AnimateLetters from '../AnimateLetters'
 import {useState,useEffect} from 'react'
 import './index.scss'
-import Typewriter from './Typewriter'
+// import Typewriter from './Typewriter'
+import Cubespinner from './Cubespinner'
 import Loader from 'react-loaders'
 
 const Skills = () => {
@@ -47,7 +48,8 @@ const Skills = () => {
             </ul>
         </div>
         <div className='skill-zone'>
-            <Typewriter />
+            {/* <Typewriter /> */}
+            <Cubespinner/>
         </div>
     </div>
     <Loader type="pacman" />
