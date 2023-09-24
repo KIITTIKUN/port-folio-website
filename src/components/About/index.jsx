@@ -22,9 +22,9 @@ const About = () => {
             <h1>
                 <AnimateLetters stringArray={headerArray} index={15} letterClass={letterClass}/>
             </h1>
-            <p>I am Kittikun Parinyaprasert, a mathematics graduate in 2022 at the Rajamangala University of Technology Thanyaburi. 
+            <p>I'm Kittikun Parinyaprasert, a mathematics graduate in 2022 at the Rajamangala University of Technology Thanyaburi. 
                 I dream of becoming a web developer. And I consistently strive to enhance my coding skills.</p>
-            <p>I am seeking opportunities in the IT industry to leverage my skills and expertise on a variety of challenging projects.</p>
+            <p>I'm seeking opportunities in the IT industry to leverage my skills and expertise on a variety of challenging projects.</p>
         </div>
         <Profile/>
     </div>
