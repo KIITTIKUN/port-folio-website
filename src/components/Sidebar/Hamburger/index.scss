@@ -12,9 +12,8 @@ $cross-bg-color: #bdc3c7;
     top: 20px;
     cursor: pointer;
     visibility: hidden;
-    
     .bm-burger-bars {
-        background: $primary-bg-color;
+        background: #dddddd;
         &:hover {
             background: $hover-bg-color;
         }

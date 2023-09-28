@@ -1,27 +1,38 @@
-import React from 'react';
-import { slide as Menu } from 'react-burger-menu'
-import './index.scss'
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { slide as Menu } from 'react-burger-menu';
+import './index.scss';
 
-class Hamburger extends React.Component {
-  showSettings (event) {
-    event.preventDefault();
-    // .
-    // .
-    // .
-  }
+const Hamburger = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  render () {
-    return (
-      <Menu>
-        <a className="menu-item" href="/">Home</a>
-        <a className="menu-item" href="/about">About</a>
-        <a className="menu-item" href="/skill">Skill</a>
-        <a className="menu-item" href="/exp">Experience</a>
-        <a className="menu-item" href="/contact">Contact</a>
-      </Menu>
-    );
-  }
+  const handleMenuStateChange = (state) => {
+    setMenuOpen(state.isOpen);
+  };
 
-}
+  useEffect(() => {
+    // Add any side effects you need here when the menu state changes (menuOpen).
+  }, [menuOpen]);
 
-export default Hamburger
+  return (
+    <Menu isOpen={menuOpen} onStateChange={handleMenuStateChange}>
+      <NavLink className="menu-item" to="/" onClick={() => setMenuOpen(false)}>
+        Home
+      </NavLink>
+      <NavLink className="menu-item" to="/about" onClick={() => setMenuOpen(false)}>
+        About
+      </NavLink>
+      <NavLink className="menu-item" to="/skill" onClick={() => setMenuOpen(false)}>
+        Skill
+      </NavLink>
+      <NavLink className="menu-item" to="/exp" onClick={() => setMenuOpen(false)}>
+        Experience
+      </NavLink>
+      <NavLink className="menu-item" to="/contact" onClick={() => setMenuOpen(false)}>
+        Contact
+      </NavLink>
+    </Menu>
+  );
+};
+
+export default Hamburger;

@@ -54,13 +54,7 @@ const Contact = () => {
                 </h1>
               <p>
             I'm interested in job opportunities. If you have any other requests or
-            questions, don't hesitate to contact me by 
-          </p>
-            <div className='contact-box'>
-            <FontAwesomeIcon icon={faPhone} color="4d4d4e" />: 098-4528975<br /> 
-            <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />: <span>kittikun.real@gmail.com</span><br />
-            </div>
-              <p>or using below form either.</p>
+            questions, don't hesitate to contact me using below form.</p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -106,6 +100,10 @@ const Contact = () => {
                 </MapContainer>
               <div className="info-map">
                 <p>Kittikun Parinyaprasert.<br/> 138 M.11, Suwannasorn Road., T. Pikulook. A. Banna. 26110 Nakornnayok, Thailand </p>
+                <div className='contact-box'>
+            <FontAwesomeIcon icon={faPhone} color="4d4d4e" />: 098-4528975<br /> 
+            <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />: <span>kittikun.real@gmail.com</span><br />
+            </div>
               </div>
             </div>
         </div>

@@ -123,6 +123,21 @@
         color: #ffd700;
       }
     }
+    .contact-box{
+      color: #000;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      background: #fff;
+      width: 100%;
+      animation: backInRight 1s 1.2s;
+      padding: 5px;
+      svg{
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
 .text-zone{
@@ -130,20 +145,6 @@
   h1{
     min-width: 280px;
   }
-.contact-box{
-  color: #000;
-  border-radius: 2px;
-  font-size: 16px;
-  font-weight: 400;
-  background: #fff;
-  width: fit-content;
-  padding: 5px;
-  svg{
-    margin: 0 5px;
-    width: 20px;
-    height: 20px;
-  }
-}
 }
 
   @media screen and (max-width: 1050px) {
