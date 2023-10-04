@@ -11,7 +11,6 @@ const Hamburger = () => {
   };
 
   useEffect(() => {
-    // Add any side effects you need here when the menu state changes (menuOpen).
   }, [menuOpen]);
 
   return (
