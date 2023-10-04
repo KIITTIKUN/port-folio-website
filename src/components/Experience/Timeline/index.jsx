@@ -37,7 +37,7 @@ function Timeline() {
         <div className="content">
           <h2>2022</h2>
           <p>
-          I participated in a cooperative program at Pow Solution as a Junior Web Developer for 4 months, During this period, I gained experience in Scrum methodologies and collaboration using GitHub. I also honed my programming skills, with a focus on the MVC framework and the MERN stack. Gained Knowledge involved in the technologies below 
+          I participated in a cooperative program at Business Alive Company Limited as a Junior Web Developer for 4 months, During this period, I gained experience in Scrum methodologies and collaboration using GitHub. I also honed my programming skills, with a focus on the MVC framework and the MERN stack. Gained Knowledge involved in the technologies below 
           </p>
           <ul>
                     <li>React</li>
